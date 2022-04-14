@@ -35,7 +35,7 @@
           <p v-else>
             <router-link :to="{ name: 'login' }">Sign in today</router-link>
             or
-            <router-link :to="{ name: 'register' }">sign up</router-link>
+            <router-link :to="{ name: 'register' }">sign up or go to bed</router-link>
             to add comments on this article.
           </p>
           <RwvComment
