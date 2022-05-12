@@ -1,0 +1,15 @@
+version: "0.1"
+environments:
+  - name: master
+    branch: master
+    mode: pull-request
+apps:
+  - name: vue-hardcoded-with-resources
+    path: ""
+    text-resources:
+      - path: "*.vue"
+        format: vue-hardcoded
+      - path: "src/messages/*/account.json"
+        format: nested-key-value
+      - path: "src/messages/*/common.json"
+        format: nested-key-value
