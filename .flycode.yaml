@@ -9,3 +9,7 @@ apps:
     text-resources:
       - path: "*.vue"
         format: vue-hardcoded
+      - path: "src/messages/*/account.json"
+        format: nested-key-value
+      - path: "src/messages/*/common.json"
+        format: nested-key-value
